@@ -1,7 +1,7 @@
 # dqn
 
 単純なDQNの実装です。
-[このサイト](https://gpa.hateblo.jp/entry/2020/01/16/094814)で紹介しているやつです。
+[このサイト](https://gpa.hateblo.jp/entry/2020/01/18/170714)で紹介しているやつです。
 
 # Author
 
