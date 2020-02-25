@@ -51,13 +51,14 @@ def do_episode(epsilon):
 
         reward_sum += reward
 
-        # エージェントを更新
+        # 誤差の計算
         if done:
             next_q = torch.zeros((), dtype=torch.float32)  # doneなら次の状態は存在せず行動価値も0
         else:
             _, next_q = calc_q(next_obs)  # max_{a} Q(s_{t+1}, a)
         loss = F.mse_loss(q, reward + GAMMA*next_q)
 
+        # エージェントを更新
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()

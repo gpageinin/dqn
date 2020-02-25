@@ -10,3 +10,4 @@ GPA芸人（@\_Yorihime\_W\_）
 # LICENSE
 
 MIT
+

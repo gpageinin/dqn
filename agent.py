@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+
 class Agent(nn.Module):
     def __init__(self, hidden):
         super().__init__()
